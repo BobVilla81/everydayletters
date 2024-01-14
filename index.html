@@ -14,7 +14,27 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-    </head>
+
+         <!-- Custom CSS for specific text container styling -->
+         <style>
+            /* Apply styles to the container to control width and center the content */
+            .additional-text .container {
+                max-width: 600px; /* Adjust the maximum width as needed */
+                margin: 0 auto; /* Center the container */
+            }
+             .features-icons-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+            }
+
+            .features-icons-item img {
+                margin-bottom: 20px; /* Adjust margin as needed */
+            }
+            }
+        </style>
+        </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
@@ -73,51 +93,54 @@
         </header>
 
         <!-- First Paragraph-->
-        <section class="additional-text mt-5">
+         <section class="additional-text mt-5">
             <div class="container text-center">
                 <h2>Welcome to Everyday Letters</h2>
                 <br>
                     <p class="lead mb-0">Welcome to Everyday Letters, where heartfelt sentiments meet the art of expression. Elevate your communication with our curated collection of beautifully crafted letters for every occasion.
                     <br /><br />
 
-                    Immerse yourself in a world of creativity, where our team of wordsmiths meticulously crafts letters that resonate with authenticity. From love notes to professional correspondences, our diverse range ensures you'll find the perfect words for every moment.
+                    Immerse yourself in a world of creativity, where our team meticulously crafts letters that resonate with authenticity. From love notes to professional correspondences, our diverse range ensures you'll find the perfect words for every moment.
                     <br>
                     <br>
                 </p>
             </div>
             <br>
         </section>
+    
         <!-- Icons Grid-->
         <section class="features-icons bg-light text-center">
             <div class="container">
                 <div class="row">
-                    <div class="col">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="col-md-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 d-flex flex-column align-items-center">
                             <div class="features-icons-icon d-flex justify-content-center align-items-center"></div>
                             <img src="assets/img/undraw_mobile_user_re_xta4.svg" alt="Image Icon" class="img-fluid">
-                            <h3>Send us your message</h3>
+                            <h3 class="mt-3">Send us your message</h3>
                             <p class="lead mb-0">Easily type and send your personalized message</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                    <div class="col-md-4">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 d-flex flex-column align-items-center">
                             <div class="features-icons-icon d-flex justify-content-center align-items-center"></div>
-                            <img src="assets/img/undraw_verified.svg" alt="Image Icon" class="img-fluid">
-                            <h3>Receive a confirmation picture</h3>
+                            <img src="assets/img/undraw_information.svg" alt="Image Icon" class="img-fluid">
+                            <h3 class="mt-3">Receive a confirmation picture</h3>
                             <p class="lead mb-0">We send you a picture of your handwritten letter for approval</p>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                    <div class="col-md-4">
+                        <div class="features-icons-item mx-auto mb-0 mb-lg-3 d-flex flex-column align-items-center">
                             <div class="features-icons-icon d-flex justify-content-center align-items-center"></div>
                             <img src="assets/img/undraw_mailing letter.svg" alt="Image Icon" class="img-fluid">
-                            <h3>We mail your letter </h3>
+                            <h3 class="mt-3">We mail your letter </h3>
                             <p class="lead mb-0">Receive mailed confirmation with post date</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
 
         <!-- Second Paragraph-->
         <section class="additional-text mt-5">
@@ -134,7 +157,7 @@
                         <br /><br />
 
                         <h2>Convenience at Your Fingertips:</h2>
-                        <p class="lead mb-0">Easily type your message on our user-friendly platform, and we'll write and mail the letter for you within 3 business days. Effortless communication, from customization to delivery. 
+                        <p class="lead mb-0">Easily type your message on our user-friendly platform, and we'll write and mail the letter for you within 3 business days.
                         <br / ><br />
                             <br>
             
