@@ -10917,3 +10917,22 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px; /* Adjust the height as needed */
+}
+
+.icon-container img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.text-container {
+  text-align: center; /* Adjust the text alignment as needed */
+}
+
+
