@@ -10970,3 +10970,8 @@ footer.footer {
   border-radius: 25px; /* You can adjust the radius according to your preference */
   overflow: hidden;
 }
+.showcase-img {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
