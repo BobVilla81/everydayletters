@@ -10935,4 +10935,34 @@ footer.footer {
   text-align: center; /* Adjust the text alignment as needed */
 }
 
+/* Custom CSS for specific text container styling */
+.additional-text .container {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif; /* Change the font-family to your preference */
+}
+
+.features-icons-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.features-icons-item img {
+  margin-bottom: 20px;
+}
+
+
+.showcase-image {
+  width: 70%; /* Make the images fill the entire container */
+  max-width: 70%; /* Ensure the images don't exceed their original size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Add rounded corners */
+}
+
+
+.showcase-text {
+  padding: 20px; /* Add padding to the showcase text for spacing */
+}
 
