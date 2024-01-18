@@ -102,7 +102,14 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  @supports (text-size-adjust: none) {
+    -webkit-text-size-adjust: none; /* for older versions of Chrome, Chrome Android, Edge, Firefox, Safari, and Samsung Internet */
+    text-size-adjust: none; /* for Chrome 54+, Chrome Android 54+, Edge 79+, and Samsung Internet 6.0+ */
+  }
 }
+
+
 
 hr {
   margin: 1rem 0;
@@ -170,11 +177,15 @@ p {
 
 abbr[title] {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   cursor: help;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+
+  @supports (-webkit-text-decoration-skip-ink: auto) or (text-decoration-skip-ink: auto) {
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+  }
 }
+
 
 address {
   margin-bottom: 1rem;
@@ -322,8 +333,12 @@ caption {
 
 th {
   text-align: inherit;
-  text-align: -webkit-match-parent;
+
+  @supports (text-align: match-parent) {
+    text-align: match-parent;
+  }
 }
+
 
 thead,
 tbody,
@@ -384,6 +399,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -442,6 +458,7 @@ legend + * {
 [type=search] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
+  appearance: textfield; 
 }
 
 /* rtl:raw:
@@ -463,6 +480,7 @@ legend + * {
 ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
+  appearance: button;
 }
 
 output {
@@ -1927,37 +1945,36 @@ progress {
 
 .table-responsive {
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+ 
 }
 
 @media (max-width: 575.98px) {
   .table-responsive-sm {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    
   }
 }
 @media (max-width: 767.98px) {
   .table-responsive-md {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    
   }
 }
 @media (max-width: 991.98px) {
   .table-responsive-lg {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    
   }
 }
 @media (max-width: 1199.98px) {
   .table-responsive-xl {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
   }
 }
 @media (max-width: 1399.98px) {
   .table-responsive-xxl {
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    
   }
 }
 .form-label {
@@ -4369,7 +4386,12 @@ textarea.form-control-lg {
   border-radius: 0;
   overflow-anchor: none;
   transition: var(--bs-accordion-transition);
+
+  @supports (overflow-anchor: auto) or (-webkit-overflow-anchor: auto) {
+    overflow-anchor: none;
+  }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .accordion-button {
     transition: none;
@@ -10974,4 +10996,14 @@ footer.footer {
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
+}
+.showcase-img {
+  background-size: cover; /* or contain, depending on your preference */
+  background-position: center center;
+  background-repeat: no-repeat;
+  max-width: 75%;
+  max-height: 75%;
+  height: auto;
+  border-radius: 25px;
+  overflow: hidden;
 }
