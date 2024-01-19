@@ -10988,7 +10988,7 @@ footer.footer {
   padding: 20px; /* Add padding to the showcase text for spacing */
 }
 .rounded-image {
-  max-width: 100%;
+  max-width: 80%;
   border-radius: 25px; /* You can adjust the radius according to your preference */
   overflow: hidden;
 }
@@ -11001,8 +11001,8 @@ footer.footer {
   background-size: cover; /* or contain, depending on your preference */
   background-position: center center;
   background-repeat: no-repeat;
-  max-width: 75%;
-  max-height: 75%;
+  max-width: 55%;
+  max-height: 55%;
   height: auto;
   border-radius: 25px;
   overflow: hidden;
