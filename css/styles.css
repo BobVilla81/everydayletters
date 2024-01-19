@@ -10974,36 +10974,27 @@ footer.footer {
 .features-icons-item img {
   margin-bottom: 20px;
 }
-
-
-.showcase-image {
-  width: 70%; /* Make the images fill the entire container */
-  max-width: 70%; /* Ensure the images don't exceed their original size */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 25px; /* Add rounded corners */
-}
-
-
-.showcase-text {
-  padding: 20px; /* Add padding to the showcase text for spacing */
-}
-.rounded-image {
-  max-width: 80%;
-  border-radius: 25px; /* You can adjust the radius according to your preference */
-  overflow: hidden;
-}
 .showcase-img {
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}
-.showcase-img {
-  background-size: cover; /* or contain, depending on your preference */
-  background-position: center center;
-  background-repeat: no-repeat;
-  max-width: 55%;
-  max-height: 55%;
+  max-width: 100%; /* Adjust the maximum width as needed */
   height: auto;
   border-radius: 25px;
   overflow: hidden;
 }
+
+.rounded-image {
+  max-width: 100%; /* Adjust the maximum width as needed */
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) { /* Adjust the breakpoint based on your design needs */
+  .showcase-img,
+  .rounded-image {
+    max-width: 100%;
+    border-radius: 0; /* Remove border-radius for smaller screens if necessary */
+  }
+}
+
