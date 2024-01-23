@@ -10998,3 +10998,27 @@ footer.footer {
   }
 }
 
+
+/* Base font size for the entire document */
+html {
+  font-size: 16px; /* You can adjust the base font size as needed */
+}
+
+body {
+  font-family: 'Lavanderia', sans-serif;
+  /* Replace 'Copperplate' with the actual font name if available, or provide fallbacks */
+  font-size: 1rem; /* Use relative units for font size */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lavanderia', sans-serif;
+  /* Apply Copperplate font to heading elements */
+  font-size: 2rem; /* Example: 2 times the base font size */
+}
+
+p, a, span, label, input, button {
+  font-family: 'Lavanderia', sans-serif;
+  /* Apply Copperplate font to other elements as needed */
+  font-size: 1rem; /* Example: 1 times the base font size */
+}
+
