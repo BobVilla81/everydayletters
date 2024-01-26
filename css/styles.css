@@ -11022,3 +11022,11 @@ p, a, span, label, input, button {
   font-size: 1rem; /* Example: 1 times the base font size */
 }
 
+.uniform-size {
+  width: 250px; /* Replace with your desired width */
+  height: 250px; /* Replace with your desired height */
+  object-fit: cover; /* This will ensure that images are cropped to fit the size, rather than being distorted */
+}
+
+
+
