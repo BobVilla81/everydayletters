@@ -11028,5 +11028,7 @@ p, a, span, label, input, button {
   object-fit: cover; /* This will ensure that images are cropped to fit the size, rather than being distorted */
 }
 
-
-
+/* Apply Lavanderia font to FAQ section */
+.value-prop p {
+  font-family: 'Lavanderia', sans-serif !important;
+}
