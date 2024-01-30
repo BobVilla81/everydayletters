@@ -11032,3 +11032,89 @@ p, a, span, label, input, button {
 .value-prop p {
   font-family: 'Lavanderia', sans-serif !important;
 }
+
+/* Additional styling for pricing cards */
+.pricing-card {
+  font-family: 'Lavanderia', sans-serif;
+  border: 2px solid transparent; /* Default border to be overridden */
+  padding: 1rem; /* Provide some padding inside the card */
+  margin: 1rem 0; /* Space out the cards vertically */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Standard tier styling */
+.pricing-card.standard {
+  border-color: #007bff; /* Blue border for Standard */
+}
+
+/* Deluxe tier styling */
+.pricing-card.deluxe {
+  border-color: #28a745; /* Green border for Deluxe */
+}
+
+/* Premium tier styling */
+.pricing-card.premium {
+  border-color: #ffc107; /* Yellow border for Premium */
+}
+
+.pricing-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+}
+
+/* Ensure the text is fitted correctly */
+.pricing-card .card-body {
+  height: auto; /* Allow the card body to expand to fit content */
+}
+
+/* Align the list items inside the card */
+.pricing-card ul {
+  padding: 0;
+  list-style: none;
+}
+
+.pricing-card ul li {
+  text-align: left; /* Align text to the left */
+  padding: 0.25rem 0; /* Add some padding to each list item */
+}
+
+<style>
+   /* Additional styling for pricing cards */
+.pricing .card {
+  margin-bottom: 20px;
+  width: 100%; /* Ensure width is consistent */
+  max-width: 350px; /* Maximum width of the cards */
+}
+
+.pricing .col-lg-4, .pricing .col-md-6, .pricing .col-sm-12 {
+  display: flex;
+  justify-content: center; /* Center the cards in their column */
+}
+
+.pricing .card-body {
+  height: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .pricing .card {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 90%;
+  }
+}
+
+/* For the bullet points */
+.pricing .fa-ul {
+  padding-left: 0;
+  list-style: var(--bs-black); /* Remove default list style */
+}
+
+.pricing .fa-li {
+  position: relative;
+  left: -1em;
+}
+
+</style>
