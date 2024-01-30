@@ -11148,6 +11148,12 @@ p, a, span, label, input, button {
   justify-content: space-between;
 }
 
+.pricing .card-body .btn-block {
+  margin-top: auto; /* This will push the button to the bottom */
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto; /* Center the button */
+}
+
 /* Apply Lavanderia font and increase font size for headers, list items, and prices */
 .pricing .card-title,
 .pricing .fa-ul li,
@@ -11198,4 +11204,17 @@ p, a, span, label, input, button {
 .faq-section p {
   font-family: 'Lavanderia', sans-serif; /* Apply the Lavanderia font */
   font-size: 1.20rem; /* Adjust the size as needed */
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensuring the card body takes full height of the card */
+}
+
+.card-body > .content-container {
+  flex-grow: 1; /* This div will grow to take up available space */
+}
+
+.card-body > .btn {
+  margin-top: auto; /* Push the button to the bottom */
 }
