@@ -11188,3 +11188,14 @@ p, a, span, label, input, button {
   margin-top: 0.5rem; /* Reduced top margin */
   margin-bottom: 1rem; /* Adjust bottom margin as needed */
 }
+
+/* FAQ Section Font Style */
+.faq-section h2 {
+  font-family: 'Lavanderia', sans-serif; /* Apply the Lavanderia font */
+  font-size: 2rem; /* Adjust the size as needed */
+}
+
+.faq-section p {
+  font-family: 'Lavanderia', sans-serif; /* Apply the Lavanderia font */
+  font-size: 1.20rem; /* Adjust the size as needed */
+}
