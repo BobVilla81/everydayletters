@@ -11036,6 +11036,7 @@ p, a, span, label, input, button {
 /* Additional styling for pricing cards */
 .pricing-card {
   font-family: 'Lavanderia', sans-serif;
+  font-size: 12px;
   border: 2px solid transparent; /* Default border to be overridden */
   padding: 1rem; /* Provide some padding inside the card */
   margin: 1rem 0; /* Space out the cards vertically */
@@ -11063,6 +11064,8 @@ p, a, span, label, input, button {
 
 /* Ensure the text is fitted correctly */
 .pricing-card .card-body {
+  font-family: 'Lavanderia', sans-serif;
+  font-size: 12px;
   height: auto; /* Allow the card body to expand to fit content */
 }
 
@@ -11077,7 +11080,7 @@ p, a, span, label, input, button {
   padding: 0.25rem 0; /* Add some padding to each list item */
 }
 
-<style>
+
    /* Additional styling for pricing cards */
 .pricing .card {
   margin-bottom: 20px;
@@ -11116,5 +11119,72 @@ p, a, span, label, input, button {
   position: relative;
   left: -1em;
 }
+/* Pricing Plan Prices */
+.pricing .plan-price {
+  font-size: 3rem; /* Set the size of the price text */
+  color: #333; /* Set the color of the price text */
+  margin-bottom: 1rem; /* Space below the price */
+}
 
-</style>
+/* Standardize Button Sizes */
+.pricing .btn-block {
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto; /* Center the button */
+}
+
+/* Uniform Card Sizes */
+.pricing .card-body {
+  height: 400px; /* Adjust the height as needed to fit the content */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Existing CSS for .pricing .card-body - include this to ensure consistency */
+.pricing .card-body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Apply Lavanderia font and increase font size for headers, list items, and prices */
+.pricing .card-title,
+.pricing .fa-ul li,
+.pricing .plan-price {
+  font-family: 'Lavanderia', sans-serif;
+  font-size: 1.5rem; /* Adjust this value as needed */
+}
+
+/* Reduce space after the header */
+.pricing .card-title {
+  margin-bottom: 0.5rem; /* Reduce the bottom margin */
+}
+
+/* Existing styles for .plan-price - modify as needed */
+.pricing .plan-price {
+  font-size: 1.25rem; /* Increase the font size */
+  color: #333; /* Adjust the color if necessary */
+  margin-top: 0.5rem; /* Reduce the top margin to bring the price closer */
+  margin-bottom: 1rem; /* Adjust bottom margin as needed */
+}
+
+/* Ensure consistent styling for list items */
+.pricing .fa-ul li {
+  font-size: 1.25rem; /* Adjust the font size for list items */
+  padding: 0.25rem 0; /* Adjust padding as needed */
+}
+/* Increase font size for headers and list items */
+.pricing-card .card-title,
+.pricing-card ul li {
+  font-size: 2rem; /* Increased font size */
+}
+
+/* Style for plan prices - make it bold and larger */
+.pricing .plan-price {
+  font-size: 3rem; /* Increased font size for price */
+  font-weight: bold; /* Make the price text bold */
+  color: #333;
+  margin-top: 0.5rem; /* Reduced top margin */
+  margin-bottom: 1rem; /* Adjust bottom margin as needed */
+}
