@@ -150,13 +150,13 @@
 
 <body>
 
-        <!-- Navigation-->
-        <nav class="navbar navbar-light bg-light static-top">
-            <div class="container">
-                <a class="navbar-brand" href="#!">Everyday Letters</p></a>
+    <!-- Navigation-->
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#!">Everyday Letters</p></a>
 
-            </div>
-        </nav>
+        </div>
+    </nav>
     </section>
     <!-- Masthead-->
     <header class="masthead">
@@ -221,33 +221,35 @@
     </header>
     <br><br>
 
-<!-- Wedding Thank-You Notes Section -->
-<section id="wedding-thank-you">
-    <div class="container-fluid py-3">
-        <div class="row justify-content-center">
-            <div class="col-lg-12 text-center">
-                <h2>We Handwrite and Mail Your Wedding Thank-You Notes</h2>
+    <!-- Wedding Thank-You Notes Section -->
+    <section id="wedding-thank-you">
+        <div class="container-fluid py-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h2>We Handwrite and Mail Your Wedding Thank-You Notes</h2>
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-lg-6 text-left">
-                <p class="lead">
-                    <br>
-                    We understand the importance of expressing gratitude to your wedding guests. Let us help you craft personalized, heartfelt thank-you notes for your wedding gifts. 
-                    Our service offers a unique, elegant way to convey your appreciation with the charm of handwritten notes.
-                    <br><br>
-                    At Everyday Letters, we are all about making personal, handwritten notes for anyone
-                who is super busy, needs to send wedding gift thank yous, or just wants to add that
-                special touch. We mix the personal with the professional perfectly.
-                </p>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-left">
+                    <p class="lead">
+                        <br>
+                        We understand the importance of expressing gratitude to your wedding guests. Let us help you
+                        craft personalized, heartfelt thank-you notes for your wedding gifts.
+                        Our service offers a unique, elegant way to convey your appreciation with the charm of
+                        handwritten notes.
+                        <br><br>
+                        At Everyday Letters, we are all about making personal, handwritten notes for anyone
+                        who is super busy, needs to send wedding gift thank yous, or just wants to add that
+                        special touch. We mix the personal with the professional perfectly.
+                    </p>
 
 
-            </p>
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<br>
+    </section>
+    <br>
 
 
     <!-- Text Section -->
@@ -417,7 +419,7 @@
                             <div class="container-fluid p-0 text-center">
                                 <p class="lead mb-0">A hassle-free way to express your thoughts with a personal
                                     touch!</span></p><br>
-                                    <a href="#signup" class="btn btn-primary" onclick="focusEmail()">Learn More</a>
+                                <a href="#signup" class="btn btn-primary" onclick="focusEmail()">Learn More</a>
 
                         </section>
                 </div>
@@ -589,31 +591,34 @@
     </section>
     <br>
 
-<!-- Call to Action-->
-<section class="call-to-action text-white text-center" id="signup">
-    <div class="container position-relative">
-        <div class="row justify-content-center">
-            <div class="col-xl-6">
-                <h2 class="mb-1">Coming March 2024</h2>
-                <h3 class="mb-4">Special offer: Get 20% off your first order!</h3>
-                <br>
-                <!-- Signup form-->
-                <form class="form-subscribe" id="contactFormFooter" onsubmit="event.preventDefault(); validateForm();">
-                    <div class="row">
-                        <div class="col">
-                            <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" required>
-                            <div class="invalid-feedback">Email Address is required and must be valid.</div>
+    <!-- Call to Action-->
+    <section class="call-to-action text-white text-center" id="signup">
+        <div class="container position-relative">
+            <div class="row justify-content-center">
+                <div class="col-xl-6">
+                    <h2 class="mb-1">Coming March 2024</h2>
+                    <h3 class="mb-4">Special offer: Get 20% off your first order!</h3>
+                    <br>
+                    <!-- Signup form-->
+                    <form class="form-subscribe" id="contactFormFooter"
+                        onsubmit="event.preventDefault(); validateForm();">
+                        <div class="row">
+                            <div class="col">
+                                <input class="form-control form-control-lg" id="emailAddressBelow" type="email"
+                                    placeholder="Email Address" required>
+                                <div class="invalid-feedback">Email Address is required and must be valid.</div>
+                            </div>
+                            <div class="col-auto">
+                                <button class="btn btn-primary btn-lg" id="submitButtonFooter"
+                                    type="submit">Submit</button>
+                            </div>
                         </div>
-                        <div class="col-auto">
-                            <button class="btn btn-primary btn-lg" id="submitButtonFooter" type="submit">Submit</button>
-                        </div>
-                    </div>
-                    <div class="feedback-message d-none" id="feedbackMessage"></div>
-                </form>
+                        <div class="feedback-message d-none" id="feedbackMessage"></div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -648,15 +653,15 @@
             var emailInput = document.getElementById('emailAddressBelow');
             var feedbackMessage = document.getElementById('feedbackMessage');
             var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Simple email validation pattern
-        
+
             // Clear previous feedback messages
             feedbackMessage.innerHTML = '';
-            feedbackMessage.classList.remove('text-success', 'text-danger', 'd-none');
-        
+            feedbackMessage.classList.remove('text-danger', 'd-none');
+
             if (emailPattern.test(emailInput.value)) {
                 // Valid email
                 feedbackMessage.innerHTML = 'Thank you for your interest! We will be in touch soon!';
-                feedbackMessage.classList.add('text-success');
+                feedbackMessage.classList.add('text-white'); // Ensure this class exists and sets color to white if needed
                 emailInput.classList.remove('is-invalid');
                 // Here, you can also implement the code to actually submit the form data to your server
             } else {
@@ -666,8 +671,9 @@
                 emailInput.classList.add('is-invalid');
             }
         }
-        </script>
-        
+
+    </script>
+
 
 </body>
 
