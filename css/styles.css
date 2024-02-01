@@ -10863,7 +10863,7 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/multiple\ wedding\ cards.jpeg") no-repeat center center;
+  background: url("../assets/img/Handing-Envelope-pexels-karolina-grabowska-4968675.jpeg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -10898,9 +10898,13 @@ header.masthead h1, header.masthead .h1 {
   min-height: 30rem;
   background-size: cover;
 }
-@media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 7rem;
+/* Adjusting the height for smaller screens to maintain responsiveness */
+@media (max-width: 767px) {
+  .showcase-img,
+  .rounded-image {
+    max-width: 100%;
+    height: auto; /* Adjust height for smaller screens */
+    border-radius: 0; /* Optional: Remove border-radius for smaller screens if necessary */
   }
 }
 
@@ -10919,7 +10923,7 @@ header.masthead h1, header.masthead .h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/multiple\ wedding\ cards.jpeg") no-repeat center center;
+  background: url("../assets/img/Handing-Envelope-pexels-karolina-grabowska-4968675.jpeg") no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -10974,12 +10978,13 @@ footer.footer {
 .features-icons-item img {
   margin-bottom: 20px;
 }
+
+
 .showcase-img {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  max-width: 100%; /* Adjust the maximum width as needed */
-  height: auto;
+  background-size: cover; /* Keep this to cover the entire container */
+  background-position: center center; /* This ensures the image is centered */
+  max-width: 100%; /* Keeps the image responsive */
+  height: auto; /* Initially set to auto */
   border-radius: 25px;
   overflow: hidden;
 }
@@ -10990,11 +10995,10 @@ footer.footer {
   overflow: hidden;
 }
 
-@media (max-width: 767px) { /* Adjust the breakpoint based on your design needs */
-  .showcase-img,
-  .rounded-image {
-    max-width: 100%;
-    border-radius: 0; /* Remove border-radius for smaller screens if necessary */
+/* Adjusting the height for larger screens to create a more square appearance */
+@media (min-width: 768px) {
+  .showcase .showcase-img {
+    height: 100%; /* This will make the height equal to the width, creating a square */
   }
 }
 
