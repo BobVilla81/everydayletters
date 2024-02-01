@@ -166,7 +166,7 @@
                     <div class="text-center text-white">
                         <!-- Page heading-->
                         <h1 class="mb-5">Personalised Handwritten Letters That Speak Louder Than Words</h1>
-                        <!-- Signup form-->
+                     <!-- Signup form-->
                         <!-- * * * * * * * * * * * * * * *-->
                         <!-- * * SB Forms Contact Form * *-->
                         <!-- * * * * * * * * * * * * * * *-->
@@ -177,20 +177,41 @@
                         <form id="contactForm" data-sb-form-api-token="57ab1d39-07e1-44fd-b266-9692fd8cb627">
 
 
-                            <form class="form-subscribe" id="contactFormHeader" onsubmit="event.preventDefault(); validateHeaderForm();">
+                            <form class="form-subscribe" id="contactFormHeader" data-sb-form-api-token="57ab1d39-07e1-44fd-b266-9692fd8cb627">
                                 <!-- Email address input-->
                                 <div class="row">
                                     <div class="col">
-                                        <input class="form-control form-control-lg" id="emailAddressHeader" type="email" placeholder="Email Address" required>
-                                        <div class="invalid-feedback">Email Address is required and must be valid.</div>
+                                        <input class="form-control form-control-lg" id="emailAddress" type="email"
+                                            placeholder="Email Address" data-sb-validations="required,email" />
+                                        <div class="invalid-feedback text-white"
+                                            data-sb-feedback="emailAddress:required">
+                                            Email Address is required.</div>
+                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">
+                                            Email
+                                            Address Email is not valid.</div>
                                     </div>
-                                    <div class="col-auto">
-                                        <button class="btn btn-primary btn-lg" id="submitButtonHeader" type="submit">Submit</button>
+                                    <div class="col-auto"><button class="btn btn-primary btn-lg disabled"
+                                            id="submitButton" type="submit">Submit</button></div>
+                                </div>
+                                <!-- Submit success message-->
+                                <!---->
+                                <!-- This is what your users will see when the form-->
+                                <!-- has successfully submitted-->
+                                <div class="d-none" id="submitSuccessMessage">
+                                    <div class="text-center mb-3">
+                                        <div class="fw-bolder">Thank you for your interest! We will be in touch soon!
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div class="feedback-message d-none" id="feedbackMessageHeader"></div>
+                                <!-- Submit error message-->
+                                <!---->
+                                <!-- This is what your users will see when there is-->
+                                <!-- an error submitting the form-->
+                                <div class="d-none" id="submitErrorMessage">
+                                    <div class="text-center text-danger mb-3">Error sending message!</div>
+                                </div>
                             </form>
-                            
                     </div>
                 </div>
             </div>
@@ -576,26 +597,45 @@
                     <h2 class="mb-1">Coming March 2024</h2>
                     <h3 class="mb-4">Special offer: Get 20% off your first order!</h3>
                     <br>
-                    <!-- Signup form-->
-                    <form class="form-subscribe" id="contactFormFooter"
-                        onsubmit="event.preventDefault(); validateForm();">
-                        <div class="row">
-                            <div class="col">
-                                <input class="form-control form-control-lg" id="emailAddressBelow" type="email"
-                                    placeholder="Email Address" required>
-                                <div class="invalid-feedback">Email Address is required and must be valid.</div>
+                         <!-- Signup form-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="57ab1d39-07e1-44fd-b266-9692fd8cb627">
+                            <!-- Email address input-->
+                            <div class="row">
+                                <div class="col">
+                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
+                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
+                                </div>
+                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
                             </div>
-                            <div class="col-auto">
-                                <button class="btn btn-primary btn-lg" id="submitButtonFooter"
-                                    type="submit">Submit</button>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    <p>To activate this form, sign up at</p>
+                                    <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="feedback-message d-none" id="feedbackMessage"></div>
-                    </form>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
 
 
@@ -608,6 +648,44 @@
                     <p class="text-muted small mb-4 mb-lg-0">&copy; Everyday Letters 2024. All Rights Reserved.</p>
                 </div>
                 <div class="col-lg-6 h-175 text-center text-lg-end my-auto">
+
+                    <div class="container px-5 my-5">
+                        <form id="contactForm" data-sb-form-api-token="57ab1d39-07e1-44fd-b266-9692fd8cb627">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                                <label for="emailAddress">Email Address</label>
+                                <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                            </div>
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    <p>To activate this form, sign up at</p>
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <div class="d-none" id="submitErrorMessage">
+                                <div class="text-center text-danger mb-3">Error sending message!</div>
+                            </div>
+                            <div class="d-grid">
+                                <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+
+
+
+
+
+
+
                     <!-- Add Facebook and Instagram links here -->
                     <div>
                         <a href="https://www.facebook.com/evdayletters/" target="_blank" rel="noopener noreferrer"
