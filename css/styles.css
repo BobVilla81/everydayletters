@@ -10881,7 +10881,7 @@ header.masthead:before {
 header.masthead h1, header.masthead .h1 {
   font-size: 2rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 500px) {
   header.masthead {
     padding-top: 12rem;
     padding-bottom: 12rem;
@@ -10892,7 +10892,7 @@ header.masthead h1, header.masthead .h1 {
 }
 
 .showcase .showcase-text {
-  padding: 3rem;
+  padding: 5rem;
 }
 .showcase .showcase-img {
   min-height: 30rem;
