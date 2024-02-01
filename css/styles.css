@@ -11220,4 +11220,8 @@ p, a, span, label, input, button {
 }
 
 
+.col-lg-4 img:hover {
+  transform: scale(1.55); /* Slightly enlarge the image on hover */
+  transition: transform 0.3s ease-in-out; /* Smooth transition for the transform */
+}
 
