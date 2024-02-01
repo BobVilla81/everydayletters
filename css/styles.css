@@ -10904,7 +10904,7 @@ header.masthead h1, header.masthead .h1 {
   .rounded-image {
     max-width: 100%;
     height: auto; /* Adjust height for smaller screens */
-    border-radius: 5; /* Optional: Remove border-radius for smaller screens if necessary */
+    border-radius: 0; /* Optional: Remove border-radius for smaller screens if necessary */
   }
 }
 
@@ -10985,7 +10985,7 @@ footer.footer {
   background-position: center center; /* This ensures the image is centered */
   max-width: 100%; /* Keeps the image responsive */
   height: auto; /* Initially set to auto */
-  border-radius: 55px;
+  border-radius: 35px;
   overflow: hidden;
 }
 
