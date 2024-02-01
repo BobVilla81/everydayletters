@@ -11233,9 +11233,7 @@ p, a, span, label, input, button {
   max-width: 300px; /* Adjust this value as needed */
 }
 
-.parent {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
+.container.px-5.my-5 {
+  margin: 0 auto; /* Center the container */
+  max-width: 600px; /* Set a max-width if needed */
 }
