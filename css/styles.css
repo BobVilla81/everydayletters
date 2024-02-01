@@ -11229,3 +11229,8 @@ p, a, span, label, input, button {
   transition: transform 0.3s ease-in-out; /* Smooth transition for the transform */
 }
 
+#emailAddress, #message, #submitButton {
+  max-width: 300px; /* Adjust this value as needed */
+}
+
+
