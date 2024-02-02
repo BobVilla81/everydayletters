@@ -156,11 +156,29 @@
         font-size: 2.5rem; /* Larger font size for the heading to make it stand out */
         font-weight: 600; /* Make the heading bold */
     }
+
+    /* Make all paragraphs larger */
+    p {
+        font-size: 24px; /* Adjust this value to make the text larger or smaller */
+    }
+
+    /* Specific section's paragraphs larger */
+    #wedding-thank-you p {
+        font-size: 25px; /* This will only affect paragraphs in the "wedding-thank-you" section */
+    }
+
+    .main-container {
+            max-width: 1200px; /* Adjust this value as needed */
+            margin: 0 auto; /* This centers the content */
+            padding: 0 20px; /* This adds some padding on the sides */
+        }
+
+
     </style>
 </head>
 
 <body>
-
+    <div class="main-container">
     <!-- Navigation-->
     <nav class="navbar navbar-light bg-light static-top">
         <div class="container">
@@ -242,7 +260,7 @@
             <div class="col-lg-6 text-left">
                 <p class="lead">
                     <br>
-                    Overwhelmed by wedding planning? Let us take the thank-you note task off your plate. Our service ensures your guests receive beautifully handwritten, heartfelt thank-you notes, mailed directly to them. 
+                    <h>Overwhelmed by wedding planning? Let us take the thank-you note task off your plate. Our service ensures your guests receive beautifully handwritten, heartfelt thank-you notes, mailed directly to them. 
                     <br><br>
                     No more stress about finding the right words or the time to write — we handle it all, from writing to sending, making gratitude easy and personal.
                     <br><br>
@@ -753,7 +771,7 @@
 
     </script>
 
-
+</div>
 </body>
 
 </html>
